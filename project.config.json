@@ -1,0 +1,12 @@
+{
+  "appid": "touristappid",
+  "projectname": "gut-buddy-miniprogram",
+  "miniprogramRoot": "dist/",
+  "compileType": "miniprogram",
+  "setting": {
+    "urlCheck": true,
+    "es6": true,
+    "postcss": true,
+    "minified": true
+  }
+}

@@ -1,2 +1,25 @@
-# gut-buddy-miniprogram
-WeChat Mini Program for Gut Buddy
+# Gut Buddy 便便实验室小程序
+
+这是《Gut Buddy 便便实验室》的微信小程序独立项目。当前阶段只开发页面骨架和模拟交互，不接入真实 DeepSeek API，不写入任何 API Key，不接微信正式登录，不建立真实健康数据库。
+
+## 第一阶段页面
+
+- 首页
+- 今日便便打卡流程
+- Gut Buddy 模拟聊天页面
+- 便便厨房骨架
+- 最近 7 天记录样式页
+- 免责声明
+- 隐私说明
+
+## 开发命令
+
+```bash
+npm install
+npm run typecheck
+npm run build:weapp
+```
+
+## 产品边界
+
+本产品定位为排便习惯记录与生活方式陪伴工具，不是 AI 医生、注册营养师、治疗工具或医疗服务。页面不提供疾病诊断，不推荐药物、保健品或排毒产品，不允许上传真实排泄物照片。
