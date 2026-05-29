@@ -1,0 +1,18 @@
+.home-page {
+  .brand-card {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 28px;
+    border-radius: 24px;
+    background: rgba(255, 253, 239, 0.9);
+    box-shadow: 0 16px 36px rgba(73, 93, 50, 0.1);
+  }
+
+  .brand-copy {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+}

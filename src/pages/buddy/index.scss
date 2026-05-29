@@ -1,0 +1,56 @@
+.buddy-page {
+  .chat-list {
+    min-height: 560px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    padding: 20px;
+    border: 2px solid rgba(96, 125, 76, 0.18);
+    border-radius: 16px;
+    background: rgba(255, 253, 239, 0.72);
+  }
+
+  .bubble {
+    max-width: 88%;
+    padding: 20px;
+    border-radius: 16px;
+    font-size: 27px;
+    line-height: 1.55;
+  }
+
+  .bubble.assistant {
+    align-self: flex-start;
+    color: #31422d;
+    background: #fffced;
+    border: 2px solid rgba(96, 125, 76, 0.18);
+  }
+
+  .bubble.user {
+    align-self: flex-end;
+    color: #263a24;
+    background: #dff2c7;
+  }
+
+  .input-card {
+    display: flex;
+    gap: 14px;
+    padding: 16px;
+    border-radius: 16px;
+    background: rgba(255, 253, 239, 0.9);
+  }
+
+  .chat-input {
+    flex: 1;
+    min-height: 86px;
+    padding: 0 20px;
+    border: 2px solid rgba(96, 125, 76, 0.22);
+    border-radius: 16px;
+    background: #fffced;
+    font-size: 27px;
+  }
+
+  .input-card .primary-button {
+    width: 150px;
+    min-height: 86px;
+  }
+}
