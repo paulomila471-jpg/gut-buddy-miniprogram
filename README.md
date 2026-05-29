@@ -18,7 +18,14 @@
 npm install
 npm run typecheck
 npm run build:weapp
+npm run build:h5
 ```
+
+## H5 预览说明
+
+H5 只用于开发阶段在浏览器中快速验收页面骨架，不改变微信小程序作为正式目标的产品方向。H5 版本仍然只包含模拟交互，不接入 DeepSeek API、微信登录、数据库、订阅消息、餐食照片、30 天计划或付费能力。
+
+如果导入 Vercel，可使用本仓库的 `vercel.json`：构建命令为 `npm run build:h5`，输出目录为 `dist`。
 
 ## 产品边界
 

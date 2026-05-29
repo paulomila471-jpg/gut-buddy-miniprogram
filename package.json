@@ -5,6 +5,8 @@
   "description": "Gut Buddy 便便实验室微信小程序第一阶段骨架",
   "scripts": {
     "build:weapp": "taro build --type weapp",
+    "build:h5": "taro build --type h5",
+    "dev:h5": "taro build --type h5 --watch",
     "dev:weapp": "taro build --type weapp --watch",
     "typecheck": "tsc --noEmit"
   },
@@ -13,6 +15,7 @@
     "@tarojs/components": "^4.0.8",
     "@tarojs/helper": "^4.0.8",
     "@tarojs/plugin-framework-react": "^4.0.8",
+    "@tarojs/plugin-platform-h5": "^4.0.8",
     "@tarojs/plugin-platform-weapp": "^4.0.8",
     "@tarojs/react": "^4.0.8",
     "@tarojs/runtime": "^4.0.8",
