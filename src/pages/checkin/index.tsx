@@ -57,7 +57,7 @@ export default function CheckinPage() {
               className={`stool-card ${draft.stoolId === item.id ? 'selected' : ''}`}
               onClick={() => setDraft((current) => ({ ...current, stoolId: item.id }))}
             >
-              <PoopIcon label={item.name} />
+              <PoopIcon label={item.name} variant={item.variant} />
               <View className="stool-text">
                 <Text>{item.id}型：{item.name}</Text>
                 <Text>{item.description}</Text>
@@ -82,7 +82,7 @@ export default function CheckinPage() {
 
       {step === 5 && (
         <View className="stack">
-          {hasWarning ? <MedicalNotice /> : <PoopIcon label={selectedStool.name} />}
+          {hasWarning ? <MedicalNotice /> : <PoopIcon label={selectedStool.name} variant={selectedStool.variant} />}
           <View className="card stack">
             <Text className="section-title">{hasWarning ? '优先安全提醒' : `${selectedStool.id}型：${selectedStool.name}`}</Text>
             <Text className="body-text">{lifestyleReference(selectedStool.id, hasWarning)}</Text>

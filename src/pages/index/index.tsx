@@ -7,6 +7,7 @@ const entries = [
   { label: '今日便便打卡', url: '/pages/checkin/index', primary: true },
   { label: '问问 Gut Buddy', url: '/pages/buddy/index' },
   { label: '便便厨房', url: '/pages/kitchen/index' },
+  { label: '便便图鉴', url: '/pages/atlas/index' },
   { label: '最近记录', url: '/pages/records/index' },
 ];
 
