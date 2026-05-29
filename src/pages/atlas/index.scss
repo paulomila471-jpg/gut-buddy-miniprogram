@@ -1,0 +1,27 @@
+.atlas-page {
+  .atlas-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .atlas-card {
+    display: flex;
+    gap: 20px;
+    padding: 24px;
+    border: 2px solid rgba(96, 125, 76, 0.18);
+    border-radius: 16px;
+    background: rgba(255, 253, 239, 0.88);
+  }
+
+  .atlas-card.locked-card {
+    background: rgba(243, 241, 224, 0.82);
+  }
+
+  .atlas-copy {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+}

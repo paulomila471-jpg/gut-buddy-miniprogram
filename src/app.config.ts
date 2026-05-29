@@ -4,6 +4,7 @@ export default defineAppConfig({
     'pages/checkin/index',
     'pages/buddy/index',
     'pages/kitchen/index',
+    'pages/atlas/index',
     'pages/records/index',
     'pages/disclaimer/index',
     'pages/privacy/index',

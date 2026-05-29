@@ -125,17 +125,16 @@ button {
 }
 
 .stool-icon {
-  width: 128px;
-  height: 96px;
+  width: 132px;
+  height: 108px;
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  gap: 8px;
 }
 
 .poop-shape {
-  width: 100px;
-  height: 72px;
+  width: 104px;
+  height: 74px;
   border: 5px solid #735b30;
   border-radius: 48% 52% 42% 46%;
   background: #f5c269;
@@ -147,12 +146,170 @@ button {
   position: absolute;
   width: 46px;
   height: 34px;
-  left: 20px;
+  left: 22px;
   top: -24px;
   border: 5px solid #735b30;
   border-bottom: 0;
   border-radius: 50% 50% 18% 48%;
-  background: #e5b764;
+  background: inherit;
+}
+
+.poop-eye,
+.poop-mouth,
+.poop-mark {
+  position: absolute;
+  z-index: 2;
+  display: block;
+}
+
+.poop-eye {
+  width: 10px;
+  height: 10px;
+  top: 28px;
+  border-radius: 50%;
+  background: #513d22;
+}
+
+.poop-eye.left {
+  left: 32px;
+}
+
+.poop-eye.right {
+  right: 32px;
+}
+
+.poop-mouth {
+  width: 28px;
+  height: 14px;
+  left: 50%;
+  top: 42px;
+  border-bottom: 4px solid #513d22;
+  border-radius: 0 0 999px 999px;
+  transform: translateX(-50%);
+}
+
+.poop-mark {
+  display: none;
+}
+
+.stool-icon.pebbles .poop-shape {
+  width: 94px;
+  height: 42px;
+  border: 0;
+  background: transparent;
+}
+
+.stool-icon.pebbles .poop-shape::before,
+.stool-icon.pebbles .poop-eye,
+.stool-icon.pebbles .poop-mouth {
+  display: none;
+}
+
+.stool-icon.pebbles .poop-mark {
+  display: block;
+  width: 34px;
+  height: 34px;
+  border: 5px solid #735b30;
+  border-radius: 50%;
+  background: #d99a4b;
+}
+
+.stool-icon.pebbles .poop-mark.one {
+  left: 0;
+  bottom: 0;
+}
+
+.stool-icon.pebbles .poop-mark.two {
+  left: 30px;
+  top: -16px;
+}
+
+.stool-icon.pebbles .poop-mark.three {
+  right: 0;
+  bottom: -4px;
+}
+
+.stool-icon.bumpy .poop-shape {
+  border-radius: 28px 38px 32px 22px;
+  background: #d99a4b;
+}
+
+.stool-icon.cracked .poop-shape {
+  width: 112px;
+  height: 62px;
+  border-radius: 55% 42% 48% 46%;
+  transform: rotate(-8deg);
+}
+
+.stool-icon.cracked .poop-mark {
+  display: block;
+  width: 5px;
+  height: 24px;
+  border-radius: 999px;
+  background: #805f31;
+}
+
+.stool-icon.cracked .poop-mark.one {
+  left: 28px;
+  top: 18px;
+  transform: rotate(28deg);
+}
+
+.stool-icon.cracked .poop-mark.two {
+  right: 34px;
+  top: 14px;
+  transform: rotate(-22deg);
+}
+
+.stool-icon.golden .poop-shape,
+.stool-icon.fitness .poop-shape,
+.stool-icon.breakfast .poop-shape {
+  background: #f4c45f;
+}
+
+.stool-icon.soft .poop-shape,
+.stool-icon.forest .poop-shape {
+  height: 64px;
+  border-radius: 44% 56% 54% 46%;
+  background: #c7b15a;
+}
+
+.stool-icon.muddy .poop-shape,
+.stool-icon.flame .poop-shape,
+.stool-icon.takeout .poop-shape {
+  height: 58px;
+  border-radius: 34px 30px 22px 28px;
+  background: #b9864c;
+}
+
+.stool-icon.watery .poop-shape {
+  height: 50px;
+  border-radius: 50% 48% 42% 54%;
+  background: #c8935a;
+}
+
+.stool-icon.milktea .poop-shape {
+  background: #c99a71;
+}
+
+.stool-icon.bubble .poop-shape {
+  background: #e1bc78;
+  box-shadow: 18px -16px 0 -8px #9ed7dd, -18px -12px 0 -9px #9ed7dd;
+}
+
+.stool-icon.worker .poop-shape,
+.stool-icon.sofa .poop-shape {
+  background: #c18a54;
+}
+
+.stool-icon.dragonfruit .poop-shape {
+  background: #ee82b3;
+}
+
+.stool-icon.locked .poop-shape {
+  filter: grayscale(1);
+  opacity: 0.44;
+  background: #7f8974;
 }
 
 .warning-card {

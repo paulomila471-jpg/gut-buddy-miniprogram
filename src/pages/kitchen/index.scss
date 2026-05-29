@@ -1,4 +1,10 @@
 .kitchen-page {
+  .ingredient-group {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
   .result-card {
     align-items: center;
     text-align: center;

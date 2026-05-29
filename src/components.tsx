@@ -1,9 +1,16 @@
 import { Text, View } from '@tarojs/components';
 
-export function PoopIcon({ label }: { label?: string }) {
+export function PoopIcon({ label, variant = 'golden', locked = false }: { label?: string; variant?: string; locked?: boolean }) {
   return (
-    <View className="stool-icon" aria-label={label || '卡通便便图标'}>
-      <View className="poop-shape" />
+    <View className={`stool-icon ${variant} ${locked ? 'locked' : ''}`} aria-label={label || '卡通便便图标'}>
+      <View className="poop-shape">
+        <View className="poop-eye left" />
+        <View className="poop-eye right" />
+        <View className="poop-mouth" />
+        <View className="poop-mark one" />
+        <View className="poop-mark two" />
+        <View className="poop-mark three" />
+      </View>
     </View>
   );
 }
